@@ -1,60 +1,198 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Manhattan Token Coin (MTC)</title>
-    <link rel="stylesheet" href="style.css">
-    <!-- Fonte futurista -->
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
-</head>
-<body>
-    <!-- Cabeçalho -->
-    <header class="hero-section">
-        <div class="container">
-            <h1 class="site-title">Manhattan Token Coin (MTC)</h1>
-            <nav class="navbar">
-                <a href="https://twitter.com" target="_blank" class="btn-twitter">Follow Twitter</a>
-                <a href="https://twitter.com" target="_blank" class="btn-twitter">Get MTC</a>
-            </nav>
-        </div>
-    </header>
+/* Resetando margens, paddings e definindo box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-    <!-- Descrição do Token -->
-    <section class="description">
-        <div class="container">
-            <div class="description-text">
-                <h2>Born from the Chaos on Pump.Fun!</h2>
-                <p>Manhattan Token Coin (MTC) – Born from the Chaos on Pump.Fun! The world of cryptocurrency is a wild, chaotic place, where anything can happen...</p>
-                <p><strong>MTC is more than just a coin – it is a force of nature.</strong></p>
-                <p>Born from chaos, it now exists as a symbol of power, growth, and unstoppable momentum in the crypto universe.</p>
-            </div>
-            <div class="description-images">
-                <!-- Imagem 1 (menor) -->
-                <div class="image1">
-                    <img src="imagens/Screenshot_1.png" alt="Manhattan Token Coin Image 1">
-                </div>
-                <!-- Imagem 2 (maior) -->
-                <div class="image2">
-                    <img src="imagens/Screenshot_2.png" alt="Manhattan Token Coin Image 2">
-                </div>
-            </div>
-        </div>
-    </section>
+/* Fonte futurista */
+body {
+    font-family: 'Orbitron', sans-serif; /* Fonte futurista */
+    background-color: #111; /* Cor de fundo escura */
+    color: #fff; /* Cor do texto */
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
 
-    <!-- Espaço Tokenomics -->
-    <section class="tokenomics">
-        <div class="container">
-            <h3>Tokenomics (Em breve...)</h3>
-            <p>Aqui virá o link para o White Paper e mais detalhes sobre o Tokenomics...</p>
-        </div>
-    </section>
+/* Container centralizado */
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
 
-    <!-- Rodapé -->
-    <footer>
-        <div class="container">
-            <a href="https://twitter.com" target="_blank" class="btn-twitter footer-btn">Follow on Twitter</a>
-        </div>
-    </footer>
-</body>
-</html>
+/* Cabeçalho */
+.hero-section {
+    background-image: url('imagens/Screenshot_1.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Altura de tela inteira */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    position: relative;
+}
+
+/* Título principal do site */
+.site-title {
+    font-size: 70px; /* Tamanho grande */
+    color: #00f8ff; /* Azul metálico */
+    text-shadow: 3px 3px 10px rgba(0, 248, 255, 0.5);
+    margin-bottom: 20px;
+}
+
+/* Navegação - botões */
+.navbar {
+    margin-top: 20px;
+}
+
+.navbar a {
+    color: #00f8ff;
+    font-size: 20px;
+    margin: 0 20px;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 2px solid #00f8ff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar a:hover {
+    background-color: #00f8ff;
+    color: #111;
+}
+
+/* Descrição do Token */
+.description {
+    background-color: #333;
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.description-text {
+    width: 60%;
+    padding-right: 20px;
+}
+
+.description-text h2 {
+    font-size: 36px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.description-text p {
+    font-size: 18px;
+    color: #aaa;
+    margin-bottom: 15px;
+}
+
+/* Estilo para as imagens */
+.description-images {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 35%;
+    flex-wrap: wrap;
+}
+
+.image1 {
+    width: 50%;
+    margin-right: 15px; /* Espaço entre as imagens */
+}
+
+.image1 img {
+    width: 100%;
+    max-width: 300px; /* Tamanho controlado para imagem 1 */
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.image2 {
+    width: 50%;
+}
+
+.image2 img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Efeito de rolagem suave para a seção Tokenomics */
+.tokenomics {
+    background-color: #222;
+    padding: 50px 0;
+    text-align: center;
+    transition: opacity 1s ease-in-out;
+    opacity: 0;
+}
+
+.tokenomics h3 {
+    color: #00f8ff;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+/* Exibindo a seção de Tokenomics com rolagem suave */
+body:target .tokenomics {
+    opacity: 1;
+}
+
+/* Rodapé */
+footer {
+    background-color: #111;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-btn {
+    background-color: #00f8ff;
+    color: #111;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.footer-btn:hover {
+    background-color: #fff;
+    color: #00f8ff;
+}
+
+/* Responsividade */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    .site-title {
+        font-size: 50px;
+    }
+
+    .description-text {
+        width: 100%;
+        padding-right: 0;
+        margin-bottom: 30px;
+    }
+
+    .description-images {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .image1, .image2 {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .navbar a {
+        font-size: 18px;
+        padding: 8px 15px;
+        margin: 0 10px;
+    }
+}
