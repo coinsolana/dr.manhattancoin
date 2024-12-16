@@ -1,44 +1,44 @@
-/* Resetando as margens e paddings */
+/* Reset margins and paddings */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Estilo geral do site */
+/* General site styling */
 body {
-    font-family: 'Orbitron', sans-serif; /* Fonte futurista */
+    font-family: 'Orbitron', sans-serif; /* Futuristic font */
     background-color: #111;
     color: #fff;
     line-height: 1.6;
 }
 
-/* Container centralizado */
+/* Centralized container */
 .container {
     width: 80%;
     margin: 0 auto;
 }
 
-/* Cabeçalho */
+/* Header */
 header {
-    background-color: rgba(34, 34, 34, 0.8); /* Fundo semitransparente */
+    background-color: rgba(34, 34, 34, 0.8); /* Semi-transparent background */
     padding: 20px 0;
     text-align: center;
     border-bottom: 5px solid #00f8ff;
 }
 
 .site-title {
-    font-size: 70px; /* Tamanho grande */
-    color: #00f8ff; /* Azul metálico */
+    font-size: 70px; /* Large font */
+    color: #00f8ff; /* Metallic blue */
     text-shadow: 3px 3px 10px rgba(0, 248, 255, 0.5);
 }
 
 .mtc {
-    letter-spacing: 5px; /* Aumenta o espaçamento entre o MTC e o parêntese */
-    color: #fff; /* Altera a cor do texto para branco */
+    letter-spacing: 5px; /* Increased spacing between MTC and parentheses */
+    color: #fff; /* White text color */
 }
 
-/* Navegação */
+/* Navigation */
 .navbar {
     margin-top: 10px;
 }
@@ -60,21 +60,22 @@ header {
     border-color: #fff;
 }
 
-/* Descrição do Token */
+/* Token Description */
 .description {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 50px 0;
-    background-color: rgba(0, 0, 0, 0.7); /* Fundo semitransparente */
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
     border-radius: 20px;
     box-shadow: 0 0 20px rgba(0, 248, 255, 0.3);
     margin-top: 30px;
+    text-align: center; /* Centers the content */
 }
 
 .description-text {
     width: 50%;
-    text-align: center; /* Centraliza o texto */
+    margin-right: 20px;
 }
 
 .description-text h2 {
@@ -91,7 +92,6 @@ header {
 
 .description-image {
     width: 40%;
-    margin-left: 20px;
 }
 
 .description-image img {
@@ -101,60 +101,45 @@ header {
     box-shadow: 0 0 15px rgba(0, 248, 255, 0.5);
 }
 
-/* Tokenomics, White Paper, Airdrops */
-.tokenomics {
+/* White Paper and Airdrop */
+.white-paper, .airdrop {
     background-color: rgba(34, 34, 34, 0.8);
     padding: 50px 0;
     text-align: center;
-    border-top: 5px solid #00f8ff;
     margin-top: 40px;
-}
-
-.tokenomics h3 {
-    color: #00f8ff;
-    font-size: 36px;
-    text-shadow: 3px 3px 10px rgba(0, 248, 255, 0.3);
-}
-
-.tokenomics p {
-    color: #aaa;
-    font-size: 18px;
-    margin-top: 20px;
-}
-
-/* Imagem 2 */
-.image-section {
-    text-align: center;
-    padding: 50px 0;
-}
-
-.image-token {
-    max-width: 80%;
     border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 248, 255, 0.5);
+    box-shadow: 0 0 20px rgba(0, 248, 255, 0.3);
 }
 
-/* Airdrop e White Paper */
-.airdrop {
-    background-color: rgba(34, 34, 34, 0.8);
-    padding: 50px 0;
-    text-align: center;
-    margin-top: 40px;
-}
-
-.airdrop h3 {
+.white-paper h3, .airdrop h3 {
     color: #00f8ff;
     font-size: 36px;
     text-shadow: 3px 3px 10px rgba(0, 248, 255, 0.3);
 }
 
-.airdrop p {
+.white-paper p, .airdrop p {
     color: #aaa;
     font-size: 18px;
     margin-top: 20px;
 }
 
-/* Rodapé */
+.airdrop .btn-checkdex, .airdrop .btn-twitter {
+    background-color: #00f8ff;
+    color: #111;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 20px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.airdrop .btn-checkdex:hover, .airdrop .btn-twitter:hover {
+    background-color: #fff;
+    color: #00f8ff;
+}
+
+/* Footer */
 footer {
     background-color: rgba(17, 17, 17, 0.9);
     padding: 20px 0;
@@ -169,4 +154,10 @@ footer {
     text-decoration: none;
     font-size: 20px;
     border-radius: 5px;
-    transition:
+    transition: all 0.3s ease;
+}
+
+.footer-btn:hover {
+    background-color: #fff;
+    color: #00f8ff;
+}
