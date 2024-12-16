@@ -140,4 +140,97 @@ header {
     padding: 10px 20px;
     border-radius: 5px;
     text-decoration: none;
-    transition
+    transition: all 0.3s ease;
+}
+
+.btn-checkdex:hover, .btn-twitter:hover {
+    background-color: #fff;
+    color: #00f8ff;
+    border-color: #00f8ff;
+}
+
+/* Rodapé */
+footer {
+    background-color: rgba(34, 34, 34, 0.9);
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 40px;
+    border-top: 5px solid #00f8ff;
+}
+
+footer .footer-btn {
+    color: #fff;
+    background-color: #00f8ff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+
+footer .footer-btn:hover {
+    background-color: #fff;
+    color: #00f8ff;
+    border-color: #00f8ff;
+}
+
+/* Animações */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(-50%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .site-title {
+        font-size: 50px;
+    }
+
+    .description {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 10px;
+    }
+
+    .description-text {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .description-image {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .navbar a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .airdrop h3 {
+        font-size: 36px;
+    }
+
+    .highlight {
+        font-size: 40px;
+    }
+
+    footer .footer-btn {
+        font-size: 16px;
+    }
+}
