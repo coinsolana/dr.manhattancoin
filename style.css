@@ -70,7 +70,7 @@ body {
     padding: 50px 0;
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
     flex-wrap: wrap;
 }
 
@@ -94,15 +94,15 @@ body {
 /* Estilo para as imagens */
 .description-images {
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content: space-between;
+    align-items: center;
     width: 35%;
     flex-wrap: wrap;
 }
 
 .image1 {
-    width: 50%;
-    margin-right: 15px; /* Espaço entre as imagens */
+    width: 45%;
+    margin-right: 20px; /* Espaço entre as imagens */
 }
 
 .image1 img {
@@ -113,7 +113,7 @@ body {
 }
 
 .image2 {
-    width: 50%;
+    width: 55%;
 }
 
 .image2 img {
