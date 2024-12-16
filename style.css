@@ -5,46 +5,48 @@
     box-sizing: border-box;
 }
 
-/* Estilos gerais */
+/* Estilo geral do site */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Orbitron', sans-serif; /* Fonte futurista */
     background-color: #111;
     color: #fff;
     line-height: 1.6;
 }
 
+/* Container centralizado */
 .container {
     width: 80%;
     margin: 0 auto;
 }
 
-h1, h2, h3 {
-    font-family: 'Orbitron', sans-serif;
-    letter-spacing: 2px;
-}
-
-/* Cabeçalho */
-header {
-    background: #222;
-    padding: 20px 0;
+/* Cabeçalho com fundo e centralização */
+.hero-section {
+    background-image: url('imagens/Screenshot_1.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Altura da tela inteira */
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
+    color: #fff;
 }
 
 .site-title {
     font-size: 70px;
     color: #00f8ff; /* Azul metálico */
     text-shadow: 3px 3px 10px rgba(0, 248, 255, 0.5);
+    margin-bottom: 20px;
 }
 
-/* Navegação */
 .navbar {
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 .navbar a {
     color: #00f8ff;
-    font-size: 18px;
-    margin: 0 15px;
+    font-size: 20px;
+    margin: 0 20px;
     text-decoration: none;
     transition: color 0.3s ease;
 }
@@ -53,14 +55,16 @@ header {
     color: #fff;
 }
 
-/* Descrição */
+/* Descrição do Token */
 .description {
-    background: #333;
+    background-color: #333;
     padding: 50px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .description-text {
-    float: left;
     width: 60%;
 }
 
@@ -75,21 +79,19 @@ header {
     color: #aaa;
 }
 
-.description-image {
-    float: right;
-    width: 30%;
-}
-
 .description-image img {
-    max-width: 100%;
+    width: 100%;
+    max-width: 400px;
     border-radius: 10px;
 }
 
-/* Tokenomics */
+/* Efeito de rolagem suave para o tokenomics */
 .tokenomics {
-    background: #222;
+    background-color: #222;
     padding: 50px 0;
     text-align: center;
+    transition: opacity 1s ease-in-out;
+    opacity: 0;
 }
 
 .tokenomics h3 {
@@ -97,15 +99,20 @@ header {
     font-size: 36px;
 }
 
+/* Exibindo a seção de tokenomics com rolagem suave */
+body:target .tokenomics {
+    opacity: 1;
+}
+
 /* Rodapé */
 footer {
-    background: #111;
+    background-color: #111;
     padding: 20px 0;
     text-align: center;
 }
 
 .footer-btn {
-    background: #00f8ff;
+    background-color: #00f8ff;
     color: #111;
     padding: 15px 30px;
     text-decoration: none;
@@ -115,7 +122,7 @@ footer {
 }
 
 .footer-btn:hover {
-    background: #fff;
+    background-color: #fff;
     color: #00f8ff;
 }
 
