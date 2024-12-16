@@ -1,178 +1,71 @@
-/* Resetando as margens e paddings */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manhattan Token Coin (MTC)</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Fonte futurista -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <div class="container">
+            <h1 class="site-title">Manhattan Token Coin<span class="mtc"> (MTC) </span></h1>
+            <nav class="navbar">
+                <a href="https://x.com/SRMANHATTANSOL" target="_blank" class="btn-twitter">Follow Twitter</a>
+                <a href="https://x.com/SRMANHATTANSOL" target="_blank" class="btn-twitter">Get MTC</a>
+            </nav>
+        </div>
+    </header>
 
-/* Estilo geral do site */
-body {
-    font-family: 'Orbitron', sans-serif; /* Fonte futurista */
-    background-color: #111;
-    color: #fff;
-    line-height: 1.6;
-}
+    <!-- Descrição do Token -->
+    <section class="description">
+        <div class="container">
+            <div class="description-text">
+                <h2>Born from the Chaos on Pump.Fun!</h2>
+                <p>Manhattan Token Coin (MTC) – Born from the Chaos on Pump.Fun! The world of cryptocurrency is a wild, chaotic place, where anything can happen...</p>
+                <p><strong>MTC is more than just a coin – it is a force of nature.</strong></p>
+                <p>Born from chaos, it now exists as a symbol of power, growth, and unstoppable momentum in the crypto universe.</p>
+            </div>
+            <div class="description-image">
+                <img src="imagens/Screenshot_3.png" alt="Manhattan Token Coin Image">
+            </div>
+        </div>
+    </section>
 
-/* Container centralizado */
-.container {
-    width: 80%;
-    margin: 0 auto;
-}
+    <!-- Tokenomics, White Paper, Airdrops -->
+    <section class="tokenomics">
+        <div class="container">
+            <h3>Tokenomics (Em breve...)</h3>
+            <p>Aqui virá o link para o White Paper e mais detalhes sobre o Tokenomics...</p>
+        </div>
+    </section>
 
-/* Cabeçalho */
-header {
-    background-color: rgba(34, 34, 34, 0.8); /* Fundo semitransparente */
-    padding: 20px 0;
-    text-align: center;
-    border-bottom: 5px solid #00f8ff;
-}
+    <!-- Imagem 2 como Parágrafo -->
+    <section class="image-section">
+        <div class="container">
+            <img src="imagens/Screenshot_2.png" alt="Imagem sobre o Token" class="image-token">
+        </div>
+    </section>
 
-.site-title {
-    font-size: 70px; /* Tamanho grande */
-    color: #00f8ff; /* Azul metálico */
-    text-shadow: 3px 3px 10px rgba(0, 248, 255, 0.5);
-}
+    <!-- Airdrops e White Paper -->
+    <section class="airdrop">
+        <div class="container">
+            <h3>White Paper</h3>
+            <p>Em breve, o White Paper estará disponível para fornecer detalhes completos sobre a visão e objetivos do Manhattan Token Coin (MTC).</p>
 
-.mtc {
-    letter-spacing: 5px; /* Aumenta o espaçamento entre o MTC e o parêntese */
-    color: #fff; /* Altera a cor do texto para branco */
-}
+            <h3>Airdrops</h3>
+            <p>Fique atento aos nossos anúncios de Airdrops! Em breve, você poderá obter MTC de maneira fácil e divertida!</p>
+        </div>
+    </section>
 
-/* Navegação */
-.navbar {
-    margin-top: 10px;
-}
-
-.navbar a {
-    color: #00f8ff;
-    font-size: 20px;
-    margin: 0 20px;
-    text-decoration: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    border: 2px solid #00f8ff;
-    transition: all 0.3s ease;
-}
-
-.navbar a:hover {
-    color: #fff;
-    background-color: #00f8ff;
-    border-color: #fff;
-}
-
-/* Descrição do Token */
-.description {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 50px 0;
-    background-color: rgba(0, 0, 0, 0.7); /* Fundo semitransparente */
-    border-radius: 20px;
-    box-shadow: 0 0 20px rgba(0, 248, 255, 0.3);
-    margin-top: 30px;
-    text-align: center; /* Centraliza o conteúdo */
-}
-
-.description-text {
-    width: 50%;
-    margin-right: 20px;
-}
-
-.description-text h2 {
-    font-size: 40px;
-    color: #fff;
-    margin-bottom: 20px;
-}
-
-.description-text p {
-    font-size: 18px;
-    color: #aaa;
-    line-height: 1.8;
-}
-
-.description-image {
-    width: 40%;
-}
-
-.description-image img {
-    width: 100%;
-    max-width: 350px;
-    border-radius: 10px;
-    box-shadow: 0 0 15px rgba(0, 248, 255, 0.5);
-}
-
-/* Tokenomics, White Paper, Airdrops */
-.tokenomics {
-    background-color: rgba(34, 34, 34, 0.8);
-    padding: 50px 0;
-    text-align: center;
-    border-top: 5px solid #00f8ff;
-    margin-top: 40px;
-}
-
-.tokenomics h3 {
-    color: #00f8ff;
-    font-size: 36px;
-    text-shadow: 3px 3px 10px rgba(0, 248, 255, 0.3);
-}
-
-.tokenomics p {
-    color: #aaa;
-    font-size: 18px;
-    margin-top: 20px;
-}
-
-/* Imagem 2 */
-.image-section {
-    text-align: center;
-    padding: 50px 0;
-}
-
-.image-token {
-    max-width: 80%;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 248, 255, 0.5);
-}
-
-/* Airdrop e White Paper */
-.airdrop {
-    background-color: rgba(34, 34, 34, 0.8);
-    padding: 50px 0;
-    text-align: center;
-    margin-top: 40px;
-}
-
-.airdrop h3 {
-    color: #00f8ff;
-    font-size: 36px;
-    text-shadow: 3px 3px 10px rgba(0, 248, 255, 0.3);
-}
-
-.airdrop p {
-    color: #aaa;
-    font-size: 18px;
-    margin-top: 20px;
-}
-
-/* Rodapé */
-footer {
-    background-color: rgba(17, 17, 17, 0.9);
-    padding: 20px 0;
-    text-align: center;
-    border-top: 5px solid #00f8ff;
-}
-
-.footer-btn {
-    background-color: #00f8ff;
-    color: #111;
-    padding: 15px 30px;
-    text-decoration: none;
-    font-size: 20px;
-    border-radius: 5px;
-    transition: all 0.3s ease;
-}
-
-.footer-btn:hover {
-    background-color: #fff;
-    color: #00f8ff;
-}
+    <!-- Rodapé -->
+    <footer>
+        <div class="container">
+            <a href="https://x.com/SRMANHATTANSOL" target="_blank" class="btn-twitter footer-btn">Follow on Twitter</a>
+        </div>
+    </footer>
+</body>
+</html>
