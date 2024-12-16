@@ -11,10 +11,6 @@ body {
     background-color: #111;
     color: #fff;
     line-height: 1.6;
-    background-image: url('imagens/Screenshot_2.png'); /* Imagem de fundo */
-    background-size: cover;
-    background-position: center center;
-    background-attachment: fixed;
 }
 
 /* Container centralizado */
@@ -49,19 +45,20 @@ header {
 }
 
 .navbar a {
-    color: #00f8ff;
+    color: #fff; /* Cor prateada para os botões */
     font-size: 20px;
     margin: 0 20px;
     text-decoration: none;
     padding: 10px 20px;
     border-radius: 5px;
     border: 2px solid #00f8ff;
+    font-family: 'Russo One', sans-serif; /* Fonte prateada futurista */
     transition: all 0.3s ease;
 }
 
 .navbar a:hover {
-    color: #fff;
     background-color: #00f8ff;
+    color: #111;
     border-color: #fff;
 }
 
@@ -107,37 +104,24 @@ header {
     box-shadow: 0 0 15px rgba(0, 248, 255, 0.5);
 }
 
-/* Airdrop - Destacar os números */
-.airdrop {
+/* Lore of Mr. Manhattan */
+.lore {
     background-color: rgba(34, 34, 34, 0.9);
     padding: 50px 0;
     text-align: center;
-    margin-top: 40px;
+    margin-top: 50px;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 248, 255, 0.3);
     animation: fadeIn 1s ease-out;
 }
 
-.airdrop h3 {
-    color: #ffd700; /* Cor Amarelo Ouro */
+.lore h3 {
+    color: #ffd700; /* Amarelo Ouro */
     font-size: 48px;
-    font-family: 'Bungee', sans-serif; /* Fonte impactante */
-    text-shadow: 3px 3px 10px rgba(255, 215, 0, 0.7);
-}
-
-.highlight {
-    color: #ffd700;
-    font-size: 52px;
-    font-weight: bold;
+    font-family: 'Bungee', sans-serif;
     text-shadow: 3px 3px 10px rgba(255, 215, 0, 0.8);
 }
 
-/* Estilo do botão Checkdex e Twitter */
-.btn-checkdex, .btn-twitter {
-    color: #fff;
-    background-color: #00f8ff;
+.lore p {
     font-size: 18px;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    transition
+    color: #ddd
