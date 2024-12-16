@@ -1,0 +1,121 @@
+/* Resetando as margens e paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos gerais */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #111;
+    color: #fff;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+h1, h2, h3 {
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 2px;
+}
+
+/* Cabeçalho */
+header {
+    background: #222;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.site-title {
+    font-size: 70px;
+    color: #00f8ff; /* Azul metálico */
+    text-shadow: 3px 3px 10px rgba(0, 248, 255, 0.5);
+}
+
+/* Navegação */
+.navbar {
+    margin-top: 10px;
+}
+
+.navbar a {
+    color: #00f8ff;
+    font-size: 18px;
+    margin: 0 15px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #fff;
+}
+
+/* Descrição */
+.description {
+    background: #333;
+    padding: 50px 0;
+}
+
+.description-text {
+    float: left;
+    width: 60%;
+}
+
+.description-text h2 {
+    font-size: 36px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.description-text p {
+    font-size: 18px;
+    color: #aaa;
+}
+
+.description-image {
+    float: right;
+    width: 30%;
+}
+
+.description-image img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/* Tokenomics */
+.tokenomics {
+    background: #222;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.tokenomics h3 {
+    color: #00f8ff;
+    font-size: 36px;
+}
+
+/* Rodapé */
+footer {
+    background: #111;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-btn {
+    background: #00f8ff;
+    color: #111;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.footer-btn:hover {
+    background: #fff;
+    color: #00f8ff;
+}
+
