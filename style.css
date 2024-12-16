@@ -1,16 +1,18 @@
-/* Resetando as margens e paddings */
+/* Resetando margens, paddings e definindo box-sizing */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Estilo geral do site */
+/* Fonte futurista */
 body {
     font-family: 'Orbitron', sans-serif; /* Fonte futurista */
-    background-color: #111;
-    color: #fff;
+    background-color: #111; /* Cor de fundo escura */
+    color: #fff; /* Cor do texto */
     line-height: 1.6;
+    margin: 0;
+    padding: 0;
 }
 
 /* Container centralizado */
@@ -19,26 +21,29 @@ body {
     margin: 0 auto;
 }
 
-/* Cabeçalho com fundo e centralização */
+/* Cabeçalho */
 .hero-section {
     background-image: url('imagens/Screenshot_1.png');
     background-size: cover;
     background-position: center;
-    height: 100vh; /* Altura da tela inteira */
+    height: 100vh; /* Altura de tela inteira */
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     color: #fff;
+    position: relative;
 }
 
+/* Título principal do site */
 .site-title {
-    font-size: 70px;
+    font-size: 70px; /* Tamanho grande */
     color: #00f8ff; /* Azul metálico */
     text-shadow: 3px 3px 10px rgba(0, 248, 255, 0.5);
     margin-bottom: 20px;
 }
 
+/* Navegação - botões */
 .navbar {
     margin-top: 20px;
 }
@@ -48,81 +53,19 @@ body {
     font-size: 20px;
     margin: 0 20px;
     text-decoration: none;
-    transition: color 0.3s ease;
+    padding: 10px 20px;
+    border: 2px solid #00f8ff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .navbar a:hover {
-    color: #fff;
+    background-color: #00f8ff;
+    color: #111;
 }
 
 /* Descrição do Token */
 .description {
     background-color: #333;
     padding: 50px 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.description-text {
-    width: 60%;
-}
-
-.description-text h2 {
-    font-size: 36px;
-    color: #fff;
-    margin-bottom: 20px;
-}
-
-.description-text p {
-    font-size: 18px;
-    color: #aaa;
-}
-
-.description-image img {
-    width: 100%;
-    max-width: 400px;
-    border-radius: 10px;
-}
-
-/* Efeito de rolagem suave para o tokenomics */
-.tokenomics {
-    background-color: #222;
-    padding: 50px 0;
-    text-align: center;
-    transition: opacity 1s ease-in-out;
-    opacity: 0;
-}
-
-.tokenomics h3 {
-    color: #00f8ff;
-    font-size: 36px;
-}
-
-/* Exibindo a seção de tokenomics com rolagem suave */
-body:target .tokenomics {
-    opacity: 1;
-}
-
-/* Rodapé */
-footer {
-    background-color: #111;
-    padding: 20px 0;
-    text-align: center;
-}
-
-.footer-btn {
-    background-color: #00f8ff;
-    color: #111;
-    padding: 15px 30px;
-    text-decoration: none;
-    font-size: 20px;
-    border-radius: 5px;
-    transition: background 0.3s ease;
-}
-
-.footer-btn:hover {
-    background-color: #fff;
-    color: #00f8ff;
-}
-
+    d
