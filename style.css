@@ -122,3 +122,22 @@ header {
     color: #ffd700; /* Cor Amarelo Ouro */
     font-size: 48px;
     font-family: 'Bungee', sans-serif; /* Fonte impactante */
+    text-shadow: 3px 3px 10px rgba(255, 215, 0, 0.7);
+}
+
+.highlight {
+    color: #ffd700;
+    font-size: 52px;
+    font-weight: bold;
+    text-shadow: 3px 3px 10px rgba(255, 215, 0, 0.8);
+}
+
+/* Estilo do botão Checkdex e Twitter */
+.btn-checkdex, .btn-twitter {
+    color: #fff;
+    background-color: #00f8ff;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition
