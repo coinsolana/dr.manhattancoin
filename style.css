@@ -276,4 +276,24 @@
                 <h2>Born from the Chaos on Pump.Fun!</h2>
                 <p>Manhattan Token Coin (MTC) – Born from the Chaos on Pump.Fun! The world of cryptocurrency is a wild, chaotic place, where anything can happen...</p>
                 <p><strong>MTC is more than just a coin – it is a force of nature.</strong></p>
-                <p>Born from chaos, it now exists as a symbol of power, growth, and unstoppable
+            </div>
+            <div class="description-image">
+                <img src="imagens/Screenshot_2.png" alt="MTC Image">
+            </div>
+        </div>
+    </section>
+
+    <!-- Airdrop Section -->
+    <section class="airdrop">
+        <h3>Airdrop</h3>
+        <p class="highlight">100,000 MTC Tokens up for grabs!</p>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>Follow us on social media!</p>
+        <a href="https://x.com/SRMANHATTANSOL" class="footer-btn">Twitter</a>
+        <p class="contract-address">Contract Address: DMD2132DMcL1sXSZw55JzVNJbWtFpvCgmK7jWWmMpump</p>
+    </footer>
+</body>
+</html>
