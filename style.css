@@ -11,6 +11,10 @@ body {
     background-color: #111;
     color: #fff;
     line-height: 1.6;
+    background-image: url('imagens/Screenshot_2.png');
+    background-size: cover;  /* A imagem será o fundo */
+    background-position: center;
+    background-attachment: fixed; /* Fixa o fundo durante o scroll */
 }
 
 /* Container centralizado */
@@ -21,15 +25,21 @@ body {
 
 /* Cabeçalho */
 header {
-    background-color: #222;
+    background-color: rgba(34, 34, 34, 0.8); /* Fundo semitransparente */
     padding: 20px 0;
     text-align: center;
+    border-bottom: 5px solid #00f8ff;
 }
 
 .site-title {
     font-size: 70px; /* Tamanho grande */
     color: #00f8ff; /* Azul metálico */
     text-shadow: 3px 3px 10px rgba(0, 248, 255, 0.5);
+}
+
+.mtc {
+    letter-spacing: 3px;
+    color: #fff; /* Altera a cor do texto para branco */
 }
 
 /* Navegação */
@@ -42,59 +52,87 @@ header {
     font-size: 20px;
     margin: 0 20px;
     text-decoration: none;
-    transition: color 0.3s ease;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 2px solid #00f8ff;
+    transition: all 0.3s ease;
 }
 
 .navbar a:hover {
     color: #fff;
+    background-color: #00f8ff;
+    border-color: #fff;
 }
 
 /* Descrição do Token */
 .description {
-    background-color: #333;
-    padding: 50px 0;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding: 50px 0;
+    background-color: rgba(0, 0, 0, 0.7); /* Fundo semitransparente */
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 248, 255, 0.3);
+    margin-top: 30px;
 }
 
 .description-text {
-    width: 60%;
+    width: 50%;
 }
 
 .description-text h2 {
-    font-size: 36px;
+    font-size: 40px;
     color: #fff;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .description-text p {
     font-size: 18px;
     color: #aaa;
+    line-height: 1.8;
+    text-align: center;
+}
+
+.description-image {
+    width: 40%;
+    margin-left: 20px;
 }
 
 .description-image img {
     width: 100%;
-    max-width: 400px;
+    max-width: 350px;
     border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 248, 255, 0.5);
 }
 
 /* Tokenomics */
 .tokenomics {
-    background-color: #222;
+    background-color: rgba(34, 34, 34, 0.8);
     padding: 50px 0;
     text-align: center;
+    border-top: 5px solid #00f8ff;
+    margin-top: 40px;
 }
 
 .tokenomics h3 {
     color: #00f8ff;
     font-size: 36px;
+    text-shadow: 3px 3px 10px rgba(0, 248, 255, 0.3);
+}
+
+.tokenomics p {
+    color: #aaa;
+    font-size: 18px;
+    margin-top: 20px;
 }
 
 /* Rodapé */
 footer {
-    background-color: #111;
+    background-color: rgba(17, 17, 17, 0.9);
     padding: 20px 0;
     text-align: center;
+    border-top: 5px solid #00f8ff;
 }
 
 .footer-btn {
@@ -105,6 +143,7 @@ footer {
     font-size: 20px;
     border-radius: 5px;
     transition: background 0.3s ease;
+    box-shadow: 0 0 15px rgba(0, 248, 255, 0.3);
 }
 
 .footer-btn:hover {
@@ -112,3 +151,19 @@ footer {
     color: #00f8ff;
 }
 
+/* Responsividade para telas menores */
+@media screen and (max-width: 768px) {
+    .description {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .description-text {
+        width: 100%;
+    }
+    
+    .description-image {
+        width: 100%;
+        margin-top: 20px;
+    }
+}
