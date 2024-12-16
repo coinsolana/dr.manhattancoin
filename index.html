@@ -4,13 +4,250 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manhattan Token Coin (MTC)</title>
-    <link rel="stylesheet" href="style.css">
     <!-- Futuristic font -->
     <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
     <!-- Fonte prateada futurista para os botões do cabeçalho -->
     <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
     <!-- Fonte para números impactantes -->
     <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+    <style>
+        /* Resetando margens e paddings */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Estilo geral do site */
+        body {
+            font-family: 'Orbitron', sans-serif; /* Fonte futurista */
+            background-color: #111;
+            color: #fff;
+            line-height: 1.6;
+            background-image: url('imagens/Screenshot_2.png'); /* Imagem de fundo */
+            background-size: cover;
+            background-position: center center;
+            background-attachment: fixed;
+        }
+
+        /* Container centralizado */
+        .container {
+            width: 85%;
+            margin: 0 auto;
+        }
+
+        /* Cabeçalho */
+        header {
+            background-color: rgba(34, 34, 34, 0.8); /* Fundo semitransparente */
+            padding: 40px 0;
+            text-align: center;
+            border-bottom: 5px solid #00f8ff;
+            animation: fadeIn 1s ease-out;
+        }
+
+        .site-title {
+            font-size: 70px; /* Tamanho grande */
+            color: #00f8ff; /* Azul metálico */
+            text-shadow: 3px 3px 10px rgba(0, 248, 255, 0.5);
+        }
+
+        .mtc {
+            letter-spacing: 5px; /* Aumenta o espaçamento entre o MTC e o parêntese */
+            color: #fff; /* Altera a cor do texto para branco */
+        }
+
+        /* Navegação */
+        .navbar {
+            margin-top: 20px;
+        }
+
+        .navbar a {
+            color: #00f8ff;
+            font-size: 20px;
+            margin: 0 20px;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            border: 2px solid #00f8ff;
+            transition: all 0.3s ease;
+        }
+
+        .navbar a:hover {
+            color: #fff;
+            background-color: #00f8ff;
+            border-color: #fff;
+        }
+
+        /* Descrição do Token */
+        .description {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 50px 0;
+            background-color: rgba(0, 0, 0, 0.7); /* Fundo semitransparente */
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgba(0, 248, 255, 0.3);
+            margin-top: 50px;
+            text-align: center;
+            animation: slideIn 1s ease-out;
+        }
+
+        .description-text {
+            width: 50%;
+            margin-right: 20px;
+        }
+
+        .description-text h2 {
+            font-size: 40px;
+            color: #fff;
+            margin-bottom: 20px;
+        }
+
+        .description-text p {
+            font-size: 18px;
+            color: #aaa;
+            line-height: 1.8;
+        }
+
+        .description-image {
+            width: 40%;
+        }
+
+        .description-image img {
+            width: 100%;
+            max-width: 350px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 248, 255, 0.5);
+        }
+
+        /* Airdrop - Destacar os números */
+        .airdrop {
+            background-color: rgba(34, 34, 34, 0.9);
+            padding: 50px 0;
+            text-align: center;
+            margin-top: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 248, 255, 0.3);
+            animation: fadeIn 1s ease-out;
+        }
+
+        .airdrop h3 {
+            color: #ffd700; /* Cor Amarelo Ouro */
+            font-size: 48px;
+            font-family: 'Bungee', sans-serif; /* Fonte impactante */
+            text-shadow: 3px 3px 10px rgba(255, 215, 0, 0.7);
+        }
+
+        .highlight {
+            color: #ffd700;
+            font-size: 52px;
+            font-weight: bold;
+            text-shadow: 3px 3px 10px rgba(255, 215, 0, 0.8);
+        }
+
+        /* Estilo do botão Checkdex e Twitter */
+        .btn-checkdex, .btn-twitter {
+            color: #fff;
+            background-color: #00f8ff;
+            font-size: 18px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .btn-checkdex:hover, .btn-twitter:hover {
+            background-color: #fff;
+            color: #00f8ff;
+            border-color: #00f8ff;
+        }
+
+        /* Rodapé */
+        footer {
+            background-color: rgba(34, 34, 34, 0.9);
+            padding: 20px 0;
+            text-align: center;
+            margin-top: 40px;
+            border-top: 5px solid #00f8ff;
+        }
+
+        footer .footer-btn {
+            color: #fff;
+            background-color: #00f8ff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 18px;
+            transition: all 0.3s ease;
+        }
+
+        footer .footer-btn:hover {
+            background-color: #fff;
+            color: #00f8ff;
+            border-color: #00f8ff;
+        }
+
+        /* Animações */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideIn {
+            0% {
+                transform: translateX(-50%);
+                opacity: 0;
+            }
+            100% {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .site-title {
+                font-size: 50px;
+            }
+
+            .description {
+                flex-direction: column;
+                text-align: center;
+                padding: 30px 10px;
+            }
+
+            .description-text {
+                width: 100%;
+                margin-right: 0;
+            }
+
+            .description-image {
+                width: 100%;
+                margin-top: 20px;
+            }
+
+            .navbar a {
+                display: block;
+                margin: 10px 0;
+            }
+
+            .airdrop h3 {
+                font-size: 36px;
+            }
+
+            .highlight {
+                font-size: 40px;
+            }
+
+            footer .footer-btn {
+                font-size: 16px;
+            }
+        }
+    </style>
 </head>
 <body>
     <!-- Cabeçalho -->
@@ -66,8 +303,4 @@
     <!-- Footer -->
     <footer>
         <div class="container">
-            <a href="https://x.com/SRMANHATTANSOL" target="_blank" class="btn-twitter footer-btn">Follow on Twitter</a>
-        </div>
-    </footer>
-</body>
-</html>
+            <a href="https://x.com/SRMANHATTANSOL" target="_blank" class="btn-twitter footer-btn">Follow on Twitter</a
