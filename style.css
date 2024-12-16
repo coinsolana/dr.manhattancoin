@@ -12,8 +12,9 @@ body {
     color: #fff;
     line-height: 1.6;
     background-image: url('imagens/Screenshot_2.png');
-    background-size: cover;  /* A imagem será o fundo */
-    background-position: center;
+    background-size: contain;  /* Redimensiona a imagem para caber na tela */
+    background-repeat: no-repeat;
+    background-position: center top; /* Ajusta para aparecer como fundo, mas sem ocupar toda a tela */
     background-attachment: fixed; /* Fixa o fundo durante o scroll */
 }
 
@@ -38,7 +39,7 @@ header {
 }
 
 .mtc {
-    letter-spacing: 3px;
+    letter-spacing: 5px; /* Aumenta o espaçamento entre o MTC e o parêntese */
     color: #fff; /* Altera a cor do texto para branco */
 }
 
@@ -78,20 +79,19 @@ header {
 
 .description-text {
     width: 50%;
+    text-align: center; /* Centraliza o texto */
 }
 
 .description-text h2 {
     font-size: 40px;
     color: #fff;
     margin-bottom: 20px;
-    text-align: center;
 }
 
 .description-text p {
     font-size: 18px;
     color: #aaa;
     line-height: 1.8;
-    text-align: center;
 }
 
 .description-image {
