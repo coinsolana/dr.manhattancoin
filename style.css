@@ -1,299 +1,236 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Manhattan Token Coin (MTC)</title>
-    <!-- Futuristic font -->
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
-    <!-- Fonte prateada futurista para os botões do cabeçalho -->
-    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
-    <!-- Fonte para números impactantes -->
-    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
-    <style>
-        /* Resetando margens e paddings */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+/* Resetando margens e paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-        /* Estilo geral do site */
-        body {
-            font-family: 'Orbitron', sans-serif; /* Fonte futurista */
-            background-color: #111;
-            color: #fff;
-            line-height: 1.6;
-            background-image: url('imagens/Screenshot_2.png'); /* Imagem de fundo */
-            background-size: cover;
-            background-position: center center;
-            background-attachment: fixed;
-        }
+/* Estilo geral do site */
+body {
+    font-family: 'Orbitron', sans-serif; /* Fonte futurista */
+    background-color: #111;
+    color: #fff;
+    line-height: 1.6;
+    background-image: url('imagens/Screenshot_2.png'); /* Imagem de fundo */
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
 
-        /* Container centralizado */
-        .container {
-            width: 85%;
-            margin: 0 auto;
-        }
+/* Container centralizado */
+.container {
+    width: 85%;
+    margin: 0 auto;
+}
 
-        /* Cabeçalho */
-        header {
-            background-color: rgba(34, 34, 34, 0.8); /* Fundo semitransparente */
-            padding: 40px 0;
-            text-align: center;
-            border-bottom: 5px solid #00f8ff;
-            animation: fadeIn 1s ease-out;
-        }
+/* Cabeçalho */
+header {
+    background-color: rgba(34, 34, 34, 0.8); /* Fundo semitransparente */
+    padding: 40px 0;
+    text-align: center;
+    border-bottom: 5px solid #00f8ff;
+    animation: fadeIn 1s ease-out;
+}
 
-        .site-title {
-            font-size: 70px; /* Tamanho grande */
-            color: #00f8ff; /* Azul metálico */
-            text-shadow: 3px 3px 10px rgba(0, 248, 255, 0.5);
-        }
+.site-title {
+    font-size: 70px; /* Tamanho grande */
+    color: #00f8ff; /* Azul metálico */
+    text-shadow: 3px 3px 10px rgba(0, 248, 255, 0.5);
+}
 
-        .mtc {
-            letter-spacing: 5px; /* Aumenta o espaçamento entre o MTC e o parêntese */
-            color: #fff; /* Altera a cor do texto para branco */
-        }
+.mtc {
+    letter-spacing: 5px; /* Aumenta o espaçamento entre o MTC e o parêntese */
+    color: #fff; /* Altera a cor do texto para branco */
+}
 
-        /* Navegação */
-        .navbar {
-            margin-top: 20px;
-        }
+/* Navegação */
+.navbar {
+    margin-top: 20px;
+}
 
-        .navbar a {
-            color: #00f8ff;
-            font-size: 20px;
-            margin: 0 20px;
-            text-decoration: none;
-            padding: 10px 20px;
-            border-radius: 5px;
-            border: 2px solid #00f8ff;
-            transition: all 0.3s ease;
-        }
+.navbar a {
+    color: #00f8ff;
+    font-size: 20px;
+    margin: 0 20px;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 2px solid #00f8ff;
+    transition: all 0.3s ease;
+}
 
-        .navbar a:hover {
-            color: #fff;
-            background-color: #00f8ff;
-            border-color: #fff;
-        }
+.navbar a:hover {
+    color: #fff;
+    background-color: #00f8ff;
+    border-color: #fff;
+}
 
-        /* Descrição do Token */
-        .description {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 50px 0;
-            background-color: rgba(0, 0, 0, 0.7); /* Fundo semitransparente */
-            border-radius: 20px;
-            box-shadow: 0 0 20px rgba(0, 248, 255, 0.3);
-            margin-top: 50px;
-            text-align: center;
-            animation: slideIn 1s ease-out;
-        }
+/* Descrição do Token */
+.description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+    background-color: rgba(0, 0, 0, 0.7); /* Fundo semitransparente */
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 248, 255, 0.3);
+    margin-top: 50px;
+    text-align: center;
+    animation: slideIn 1s ease-out;
+}
 
-        .description-text {
-            width: 50%;
-            margin-right: 20px;
-        }
+.description-text {
+    width: 50%;
+    margin-right: 20px;
+}
 
-        .description-text h2 {
-            font-size: 40px;
-            color: #fff;
-            margin-bottom: 20px;
-        }
+.description-text h2 {
+    font-size: 40px;
+    color: #fff;
+    margin-bottom: 20px;
+}
 
-        .description-text p {
-            font-size: 18px;
-            color: #aaa;
-            line-height: 1.8;
-        }
+.description-text p {
+    font-size: 18px;
+    color: #aaa;
+    line-height: 1.8;
+}
 
-        .description-image {
-            width: 40%;
-        }
+.description-image {
+    width: 40%;
+}
 
-        .description-image img {
-            width: 100%;
-            max-width: 350px;
-            border-radius: 10px;
-            box-shadow: 0 0 15px rgba(0, 248, 255, 0.5);
-        }
+.description-image img {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 248, 255, 0.5);
+}
 
-        /* Airdrop - Destacar os números */
-        .airdrop {
-            background-color: rgba(34, 34, 34, 0.9);
-            padding: 50px 0;
-            text-align: center;
-            margin-top: 40px;
-            border-radius: 10px;
-            box-shadow: 0 0 20px rgba(0, 248, 255, 0.3);
-            animation: fadeIn 1s ease-out;
-        }
+/* Airdrop - Destacar os números */
+.airdrop {
+    background-color: rgba(34, 34, 34, 0.9);
+    padding: 50px 0;
+    text-align: center;
+    margin-top: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 248, 255, 0.3);
+    animation: fadeIn 1s ease-out;
+}
 
-        .airdrop h3 {
-            color: #ffd700; /* Cor Amarelo Ouro */
-            font-size: 48px;
-            font-family: 'Bungee', sans-serif; /* Fonte impactante */
-            text-shadow: 3px 3px 10px rgba(255, 215, 0, 0.7);
-        }
+.airdrop h3 {
+    color: #ffd700; /* Cor Amarelo Ouro */
+    font-size: 48px;
+    font-family: 'Bungee', sans-serif; /* Fonte impactante */
+    text-shadow: 3px 3px 10px rgba(255, 215, 0, 0.7);
+}
 
-        .highlight {
-            color: #ffd700;
-            font-size: 52px;
-            font-weight: bold;
-            text-shadow: 3px 3px 10px rgba(255, 215, 0, 0.8);
-        }
+.highlight {
+    color: #ffd700;
+    font-size: 52px;
+    font-weight: bold;
+    text-shadow: 3px 3px 10px rgba(255, 215, 0, 0.8);
+}
 
-        /* Estilo do botão Checkdex e Twitter */
-        .btn-checkdex, .btn-twitter {
-            color: #fff;
-            background-color: #00f8ff;
-            font-size: 18px;
-            padding: 10px 20px;
-            border-radius: 5px;
-            text-decoration: none;
-            transition: all 0.3s ease;
-        }
+/* Estilo do botão Checkdex e Twitter */
+.btn-checkdex, .btn-twitter {
+    color: #fff;
+    background-color: #00f8ff;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
 
-        .btn-checkdex:hover, .btn-twitter:hover {
-            background-color: #fff;
-            color: #00f8ff;
-            border-color: #00f8ff;
-        }
+.btn-checkdex:hover, .btn-twitter:hover {
+    background-color: #fff;
+    color: #00f8ff;
+    border-color: #00f8ff;
+}
 
-        /* Rodapé */
-        footer {
-            background-color: rgba(34, 34, 34, 0.9);
-            padding: 20px 0;
-            text-align: center;
-            margin-top: 40px;
-            border-top: 5px solid #00f8ff;
-        }
+/* Rodapé */
+footer {
+    background-color: rgba(34, 34, 34, 0.9);
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 40px;
+    border-top: 5px solid #00f8ff;
+}
 
-        footer .footer-btn {
-            color: #fff;
-            background-color: #00f8ff;
-            padding: 10px 20px;
-            border-radius: 5px;
-            text-decoration: none;
-            font-size: 18px;
-            transition: all 0.3s ease;
-        }
+footer .footer-btn {
+    color: #fff;
+    background-color: #00f8ff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
 
-        footer .footer-btn:hover {
-            background-color: #fff;
-            color: #00f8ff;
-            border-color: #00f8ff;
-        }
+footer .footer-btn:hover {
+    background-color: #fff;
+    color: #00f8ff;
+    border-color: #00f8ff;
+}
 
-        /* Estilo para o endereço do contrato */
-        .contract-address {
-            margin-top: 10px;
-            font-size: 18px;
-            color: #00f8ff;
-            text-shadow: 2px 2px 5px rgba(0, 248, 255, 0.5);
-        }
+/* Animações */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
 
-        /* Animações */
-        @keyframes fadeIn {
-            0% {
-                opacity: 0;
-            }
-            100% {
-                opacity: 1;
-            }
-        }
+@keyframes slideIn {
+    0% {
+        transform: translateX(-50%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
 
-        @keyframes slideIn {
-            0% {
-                transform: translateX(-50%);
-                opacity: 0;
-            }
-            100% {
-                transform: translateX(0);
-                opacity: 1;
-            }
-        }
+/* Responsividade */
+@media (max-width: 768px) {
+    .site-title {
+        font-size: 50px;
+    }
 
-        /* Responsividade */
-        @media (max-width: 768px) {
-            .site-title {
-                font-size: 50px;
-            }
+    .description {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 10px;
+    }
 
-            .description {
-                flex-direction: column;
-                text-align: center;
-                padding: 30px 10px;
-            }
+    .description-text {
+        width: 100%;
+        margin-right: 0;
+    }
 
-            .description-text {
-                width: 100%;
-                margin-right: 0;
-            }
+    .description-image {
+        width: 100%;
+        margin-top: 20px;
+    }
 
-            .description-image {
-                width: 100%;
-                margin-top: 20px;
-            }
+    .navbar a {
+        display: block;
+        margin: 10px 0;
+    }
 
-            .navbar a {
-                display: block;
-                margin: 10px 0;
-            }
+    .airdrop h3 {
+        font-size: 36px;
+    }
 
-            .airdrop h3 {
-                font-size: 36px;
-            }
+    .highlight {
+        font-size: 40px;
+    }
 
-            .highlight {
-                font-size: 40px;
-            }
-
-            footer .footer-btn {
-                font-size: 16px;
-            }
-        }
-    </style>
-</head>
-<body>
-    <!-- Cabeçalho -->
-    <header>
-        <div class="container">
-            <h1 class="site-title">Manhattan Token Coin<span class="mtc"> (MTC) </span></h1>
-            <nav class="navbar">
-                <a href="https://x.com/SRMANHATTANSOL" target="_blank" class="btn-header">Follow on Twitter</a>
-                <a href="https://x.com/SRMANHATTANSOL" target="_blank" class="btn-header">Get MTC</a>
-            </nav>
-        </div>
-    </header>
-
-    <!-- Token Description with Lore -->
-    <section class="description">
-        <div class="container">
-            <div class="description-text">
-                <h2>Born from the Chaos on Pump.Fun!</h2>
-                <p>Manhattan Token Coin (MTC) – Born from the Chaos on Pump.Fun! The world of cryptocurrency is a wild, chaotic place, where anything can happen...</p>
-                <p><strong>MTC is more than just a coin – it is a force of nature.</strong></p>
-            </div>
-            <div class="description-image">
-                <img src="imagens/Screenshot_2.png" alt="MTC Image">
-            </div>
-        </div>
-    </section>
-
-    <!-- Airdrop Section -->
-    <section class="airdrop">
-        <h3>Airdrop</h3>
-        <p class="highlight">100,000 MTC Tokens up for grabs!</p>
-    </section>
-
-    <!-- Rodapé -->
-    <footer>
-        <p>Follow us on social media!</p>
-        <a href="https://x.com/SRMANHATTANSOL" class="footer-btn">Twitter</a>
-        <p class="contract-address">Contract Address: DMD2132DMcL1sXSZw55JzVNJbWtFpvCgmK7jWWmMpump</p>
-    </footer>
-</body>
-</html>
+    footer .footer-btn {
+        font-size: 16px;
+    }
+}
